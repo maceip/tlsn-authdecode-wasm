@@ -1,0 +1,28 @@
+[package]
+name = "authdecode-wasm"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+authdecode = { path ="/Users/rpm/github/tlsn/authdecode" }
+tracing-subscriber = { version = "0.3.1", features = ["env-filter"] }
+wasm-bindgen = { version = "0.2.91"}
+rand_chacha = "0.3.1"
+hex = "0.4.3"
+num-bigint = { version = "0.4.4", features = ["rand"] }
+num = "0.4.1" 
+rand = "0.8"
+getrandom = { version = "0.2", features = ["js"] }
+console_error_panic_hook = "0.1.7"
+web-time = "1.0"
+humantime = "2"
+tracing-wasm = "0.2.1"
+
+[dependencies.web-sys]
+version = "0.3.4"
+features = ['Window', 'Performance', 'PerformanceTiming']
