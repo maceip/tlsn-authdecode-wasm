@@ -9,7 +9,7 @@ edition = "2021"
 crate-type = ["cdylib"]
 
 [dependencies]
-authdecode = { path ="https://github.com/tlsnotary/tlsn", branch = "authdecode_2024" }
+authdecode = { git ="https://github.com/tlsnotary/tlsn", branch = "authdecode_2024" }
 tracing-subscriber = { version = "0.3.1", features = ["env-filter"] }
 wasm-bindgen = { version = "0.2.91"}
 rand_chacha = "0.3.1"
